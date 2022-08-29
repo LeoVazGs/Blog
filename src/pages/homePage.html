@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/homePage.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!-- MODAIS -->
+    <section id="modalEdit" class="main__modais modal hidden">
+
+        <div class="main__modais__modalEdit1">
+            <button id="buttonClose"><img src="../assets/close.jpg"></button>
+            <h2>Editar</h2>
+            <input type="text" id="main__modais__modalEdit1__input" placeholder="Editar comentário...">
+            <button id="main__modais__modalEdit1__buttonEdit">Enviar</button>
+        </div>
+        <div class="main__modais__modalEdit2">
+            <button id="buttonClose"><img src="../assets/close.jpg"></button>
+            <h2>Editar</h2>
+            <input type="text" id="main__modais__modalEdit2__input" placeholder="Editar comentário...">
+            <button id="main__modais__modalEdit2__buttonEdit">Enviar</button>
+        </div>
+    </section>
+
+    <section id="modalDelete" class="main__modais modal hidden">
+        <div class="main__modais__modalDelete1">
+            <button id="buttonClose"><img src="../assets/close.jpg"></button>
+            <h2>Deseja deletar o seu post?</h2>
+            <button id="main__modais__modalDelete1__buttonDelete">Deletar</button>
+        </div>
+
+        <div class="main__modais__modalDelete2">
+            <button id="buttonClose"><img src="../assets/close.jpg"></button>
+            <h2>Deseja deletar o seu post?</h2>
+            <button id="main__modais__modalDelete2__buttonDelete">Deletar</button>
+        </div>
+    </section>
+
+    <header>
+        <div class="header__fotoENome">
+            <figure>
+                <img id="userImg"> <!-- foto de perfil -->
+            </figure>
+            <p id="userName"></p>
+        </div>
+        <button id="btnLogout">logout</button>
+    </header>
+    <main>
+        <section class="caixaDeTexto">
+            <input type="text" id="inputCaixaDeTexto" placeholder="Pode desabafar dev...">
+            <button type="submit" id="btnPost"><img src="../assets/adicionarBranco.png"></button>
+        </section>
+
+        <section class="posts">
+            <!-- card1mobile -->
+            <ul class="container__posts1">
+                <li>
+                    <figure>
+                        <img src=""> <!-- foto de perfil do post -->
+                    </figure>
+                    <h2>nome da pessoa</h2>
+                    <p>o que está escrito no post que pegamos do input</p>
+                    <p class="dataPost">data do post</p>
+                    <div class="botoesPost">
+                        <button class="buttonEdit"><img src="../assets/lapis.jpg"></button>
+                        <button class="buttonDelete"><img src="../assets/lixeira.jpg"></button>
+                    </div>
+                </li>
+            </ul>
+            <!-- card2desktop -->
+            <ul class="container__posts2">
+                <li>
+                    <div class="container__posts2__imagemEBotoes">
+                        <figure>
+                            <img src=""> <!-- foto de perfil do post -->
+                        </figure>
+                        <div class="botoesPost">
+                            <button class="buttonEdit"><img src="../assets/lapis.jpg"></button>
+                            <button class="buttonDelete"><img src="../assets/lixeira.jpg"></button>
+                        </div>
+                    </div>
+                    <div class="container__posts2__parteEscrita">
+                        <h2>nome da pessoa</h2>
+                        <p>o que está escrito no post que pegamos do input</p>
+                        <p class="dataPost">data do post</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <button id="newPost">Carregar Mais</button>
+        </section>
+    </main>
+    <script type="module" src="../scripts/homepage.js"></script>
+</body>
+
+</html>

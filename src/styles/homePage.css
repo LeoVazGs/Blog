@@ -1,0 +1,466 @@
+:root {
+    --azulForte: #152b5d;
+    --branco: #ffff;
+    --azulClaro: #83a3ca;
+    --azulMaisClaro: #bfd4ec;
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--azulMaisClaro);
+}
+
+#newPost{
+    margin: 0px 0px 40px 40px ;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: orange;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azulForte);
+    padding: 20px;
+    margin-bottom: 30px;
+    align-content: center;
+}
+
+header button {
+    background-color: white;
+    border-radius: 5px;
+    align-self: center;
+    width: 80px;
+    height: 30px;
+    padding: 5px 15px;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+#userName{
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header__fotoENome figure img{
+    width: 80px;
+    height: 67px;
+    border-radius: 100px;
+}
+
+.header__fotoENome{
+    display: flex;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CAIXA DE TEXTO */
+.caixaDeTexto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+}
+
+.caixaDeTexto input {
+    width: 95%;
+    height: 75%;
+    align-self: baseline;
+    border: 0;
+}
+
+.caixaDeTexto button {
+    background-color: var(--azulForte);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    border: white solid 2px;
+    align-self: flex-end;
+}
+
+.caixaDeTexto button img {
+    height: 100%;
+}
+
+/* POSTS 1 */
+.container__posts1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.container__posts1 li {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    background-color: var(--azulForte);
+    border-radius: 10px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+.escritoPost{
+    word-break: break-word;
+    font-size: 16px;
+}
+
+.container__posts1__parteEscrita__data {
+    display: flex;
+    margin-top: 40px;
+}
+
+.botoesPost {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.container__posts1 li .botoesPost {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.botoesPost button {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.botoesPost button img {
+    margin-top: 5px;
+    width: 110%;
+    border-radius: 10px;
+}
+
+.container__posts1 li figure img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+
+
+
+/* POSTS 2 */
+
+.botoesPost{
+    align-self: baseline;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+.container__posts2{
+    display: none;
+}
+
+.container__posts2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.container__posts2 li {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    background-color: var(--azulForte);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+
+.container__posts2 li figure{
+    width: 122px;
+    height: 115px;
+}
+.container__posts2 li figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.container__posts2__imagemEBotoes {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-self: baseline;
+    gap:15px;
+}
+
+.container__posts2__parteEscrita {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    width: 80%;
+    max-height: 100%;
+    justify-content: space-around;
+   
+}
+
+.container__posts2__parteEscrita h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+
+.container__posts2__parteEscrita__data {
+    align-self: flex-end;
+    margin-top: 80px;
+}
+
+.botoesPost button {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.botoesPost button img {
+    margin-top: 5px;
+    width: 110%;
+    border-radius: 10px;
+}
+
+/* MODAL*/
+
+.modal{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed; 
+    align-items: center;
+}
+
+/* MODAL EDIT 1 */
+
+.main__modais {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main__modais__modalEdit1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azulForte);
+    color: white;
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#main__modais__modalEdit1__input {
+    width: 80%;
+    height: 70%;
+    border-radius: 15px
+}
+
+#main__modais__modalEdit1__buttonEdit {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#buttonClose {
+    background-color: #ff3b3b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0;
+    align-self: flex-end;
+}
+
+#buttonClose img {
+    width: 140%;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+/* MODAL DELETE 1 */
+.main__modais__modalDelete1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100px;
+    flex-direction: column;
+    background-color: var(--azulForte);
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#main__modais__modalDelete1__buttonDelete {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+}
+
+/* MODAL DELETE 2 */
+.main__modais__modalDelete2 {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 150px;
+    flex-direction: column;
+    background-color: var(--azulForte);
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+#main__modais__modalDelete2__buttonDelete {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+/* MODAL EDIT 2 */
+.main__modais__modalEdit2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azulForte);
+    color: white;
+    width: 30%;
+    height: 300px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+#main__modais__modalEdit2__input {
+    width: 70%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+#main__modais__modalEdit2__buttonEdit {
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 25%;
+    font-size:  90%;
+}
+
+/* MODAL HIDDEN 1 */
+ .hidden{
+    display: none;
+ }
+
+@media (max-width: 849px) {
+    .container__posts2 {
+        display: none;
+    }
+
+    .main__modais__modalEdit2 {
+        display: none;
+    }
+
+    .main__modais__modalDelete2 {
+        display: none;
+    }
+}
+
+@media (min-width: 850px) {
+
+    .container__posts1 {
+        display: none;
+    }
+
+    .main__modais__modalEdit1 {
+        display: none;
+    }
+
+    .main__modais__modalDelete1 {
+        display: none;
+    }
+
+    /* CAIXA DE TEXTO */
+    .caixaDeTexto {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* HEADER */ 
+    header button {
+        width: 100px;
+        height: 40px;
+        padding: 5px 15px;
+        margin-right: 20px;
+    }
+
+    .header__fotoENome figure img{
+        width: 122px;
+        height: 115px;
+       
+    }
+    
+    #userName{
+    font-size: 40px;
+    }
+
+    .header__fotoENome{
+        gap: 30px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (min-width: 1150px) {
+ 
+}
